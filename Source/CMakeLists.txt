@@ -6,6 +6,6 @@ file(GLOB_RECURSE _HEADERS  *.h *.hpp)
 
 file(GLOB_RECURSE _SCRS  *.c *.cpp *.cxx *.cc)
 
-add_library(${TARGET_NAME} ${_SCRS} ${_HEADERS} )
+add_executable (${TARGET_NAME} ${_SCRS} ${_HEADERS})
 
 set_target_properties(${TARGET_NAME} PROPERTIES LINKER_LANGUAGE cxx)
